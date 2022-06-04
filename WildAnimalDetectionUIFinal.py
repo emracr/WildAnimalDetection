@@ -50,7 +50,7 @@ class Window(QWidget):
     
     
     def getImage(self):
-        fname = QFileDialog.getOpenFileName(self, 'Open file','d:\\Dataset\\', "Image files (*.jpg *.gif)")
+        fname = QFileDialog.getOpenFileName(self, 'Open file','c:\\', "Image files (*.jpg *.gif)")
         imagePath = fname[0]
         self.uploadedImagePath = imagePath
         pixmap = QPixmap(imagePath)
